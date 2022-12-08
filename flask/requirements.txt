@@ -1,0 +1,7 @@
+Flask
+Flask-HTTPAuth
+Flasgger
+uWSGI
+Werkzeug
+numpy==1.21.6
+open3d==0.15.2
