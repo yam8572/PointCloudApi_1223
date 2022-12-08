@@ -29,13 +29,13 @@ jobs:
     runs-on: self-hosted
     needs: Stop-Containers
     if: always()
-#     steps:
+    steps:
 #     - name: route to code folder
 #       run:
 #         ls
-#     - name: clone source code
-#       run:
-#         git clone https://github.com/yam8572/PointCloudApi.git
+    - name: clone source code
+      run:
+        git clone https://github.com/yam8572/PointCloudApi.git
 #     - name: route to project
 #       run:
 #         cd ./PointCloudApi
