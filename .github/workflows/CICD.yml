@@ -30,9 +30,9 @@ jobs:
     needs: Stop-Containers
     if: always()
     steps:
-#     - name: route to code folder
-#       run:
-#         ls
+    - name: route to code folder
+      run:
+        cd ..
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
