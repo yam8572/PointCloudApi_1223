@@ -32,19 +32,19 @@ jobs:
     steps:
     - name: route to code folder
       run:
-        cd ~/
+        cd ..
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
-#     - name: route to project
-#       run:
-#         cd ./PointCloudApi
-#     - name: docker compose up 
-#       run:
-#         docker-compose up -d --build
-#     - name: route back
-#       run:
-#         cd .. 
+    - name: route to project
+      run:
+        cd ./PointCloudApi
+    - name: docker compose up 
+      run:
+        docker-compose up -d --build
+    - name: route back
+      run:
+        cd .. 
 #     - name: remove project folder
 #       run:
 #         rm -rf flask_container
