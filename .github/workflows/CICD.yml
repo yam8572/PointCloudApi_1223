@@ -32,7 +32,7 @@ jobs:
     steps:
     - name: route to code folder
       run:
-        cd ~/C:/www/
+        cd ~/
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
