@@ -16,11 +16,11 @@ jobs:
     # 遠端部署
     - name: stop nginx container
       run: 
-        docker container stop $(docker container ls -q --filter name=flask_container)
+        docker container stop $(docker container ls -q --filter name=nginx_container)
     - name: stop flask container
       if: always()
       run:
-        docker container stop $(docker container ls -q --filter name=nginx_container)
+        docker container stop $(docker container ls -q --filter name=flask_container)
     - name: prune containers
       if: always()
       run:
