@@ -69,8 +69,8 @@ jobs:
         pwd 
       # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\
         
-    - name: remove project folder
-      run:
-        rm PointCloudApi
+#     - name: remove project folder
+#       run:
+#         rm -force PointCloudApi
     
 # if: always()>> always execute, and returns true, even when canceled.
