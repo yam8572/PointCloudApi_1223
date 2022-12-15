@@ -32,19 +32,22 @@ jobs:
     steps:
     - name: where am I
       run:
-        pwd
-#     - name: set workdir
-#       run: |
-#         working-directory: C:\www
-    - name: route to code folder
+        pwd 
+    # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\PointCloudApi
+#     - name: route to githubProject
+#       run:
+#         cd C:\Users\yun\githubProject 
+
+    - name: set workdir
+      run: |
+        working-directory: C:\Users\yun\githubProject
+    - name: where am I
       run:
         pwd
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
-    - name: where am I
-      run:
-        pwd
+
 #     - name: route to project
 #       run:
 #         cd ./PointCloudApi
