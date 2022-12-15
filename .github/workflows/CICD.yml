@@ -41,7 +41,14 @@ jobs:
 #     - name: set workdir
 #       run: |
 #         working-directory: C:\Users\yun\githubProject
-
+    - name: route to code folder
+      run:
+        cd ..
+        
+    - name: where am I
+      run:
+        pwd 
+        
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
