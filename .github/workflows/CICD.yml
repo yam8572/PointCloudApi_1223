@@ -34,13 +34,13 @@ jobs:
       run:
         pwd 
     # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\PointCloudApi
-#     - name: route to githubProject
-#       run:
-#         cd C:\Users\yun\githubProject 
+    - name: route to githubProject
+      run:
+        cd C:\Users\yun\githubProject 
 
-    - name: set workdir
-      run: |
-        working-directory: C:\Users\yun\githubProject
+#     - name: set workdir
+#       run: |
+#         working-directory: C:\Users\yun\githubProject
     - name: where am I
       run:
         pwd
