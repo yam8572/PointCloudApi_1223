@@ -38,6 +38,14 @@ jobs:
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
+        
+    - name: route to project
+      run:
+        cd ./PointCloudApi
+        
+    - name: where am I
+      run:
+        pwd 
     
     - name: docker compose up 
       run:
