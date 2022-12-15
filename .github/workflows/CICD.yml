@@ -33,31 +33,15 @@ jobs:
     - name: where am I
       run:
         pwd 
-    # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\
-#     - name: route to githubProject
-#       run:
-#         cd C:\Users\yun\githubProject 
-
-#     - name: set workdir
-#       run: |
-#         working-directory: C:\Users\yun\githubProject
-    - name: route to code folder
-      run:
-        cd ..
-        
-    - name: where am I
-      run:
-        pwd 
-        
     - name: clone source code
       run:
         git clone https://github.com/yam8572/PointCloudApi.git
         
-    - name: route to project
-      run:
-        cd ./PointCloudApi
+#     - name: route to project
+#       run:
+#         cd ./PointCloudApi
         
-    - name: where am I
+    - name: where am I 2
       run:
         pwd 
     # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\PointCloudApi
@@ -71,7 +55,7 @@ jobs:
       run:
         cd .. 
         
-    - name: where am I
+    - name: where am I 3
       run:
         pwd 
       # defaut: C:\www\PointCloudApi\actions-runner\PointCloudApi\PointCloudApi\
