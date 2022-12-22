@@ -3,17 +3,17 @@ services:
 
   flask:
     build: ./flask
-    container_name: flask_container
+    container_name: container_flask
     # restart: always
     environment:
-      - APP_NAME=PointCloudApp
+      - APP_NAME=PointCloudApiApp
     expose:
       - 8888
 
 
   nginx:
     build: ./nginx
-    container_name: nginx_container
+    container_name: container_nginx
     # restart: always
     ports:
       - "80:80"
