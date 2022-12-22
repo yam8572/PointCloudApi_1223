@@ -42,5 +42,4 @@ jobs:
     - name: docker compose up 
       run:
         # -d: 在後台執行該服務
-        sudo service docker restart
         docker-compose up -d --build
