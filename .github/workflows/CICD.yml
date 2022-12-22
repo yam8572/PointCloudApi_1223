@@ -16,11 +16,11 @@ jobs:
     # 遠端部署
     - name: stop nginx container
       run: 
-        docker container stop $(docker container ls -q --filter name=nginx_container)
+        docker container stop $(docker container ls -q --filter name=container_nginx)
     - name: stop flask container
       if: always()
       run:
-        docker container stop $(docker container ls -q --filter name=flask_container)
+        docker container stop $(docker container ls -q --filter name=container_falsk)
     - name: prune containers
       if: always()
       run:
@@ -37,7 +37,7 @@ jobs:
       
     - name: clone source code
       run:
-        git clone https://github.com/yam8572/PointCloudApi.git
+        git clone https://github.com/yam8572/PointCloudApi_1223.git
 
     - name: docker compose up 
       run:
